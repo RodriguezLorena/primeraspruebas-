@@ -254,73 +254,115 @@
 //una condicion es que solo los que se encuentran en el array autores, van a poder crear posts. 
 
 
-const Blog = {
-  autores: [],
-  posts: [],
-  titulo: " ",
-};
+// const Blog = {
+//   autores: [],
+//   posts: [],
+//   titulo: " ",
+// };
 
-function agragarTitulo(titulo) {
-  Blog.titulo = titulo;
-}
-agragarTitulo("Mi Blog");
-console.log(Blog);
-
-function agregarAutores(autor) {
-  Blog.autores.push(autor);
-}
-agregarAutores("Frigerio");
-agregarAutores("kaska");
-console.log(Blog);
-
-function verificar(autores) {
-  for (let i = 0; i < Blog.autores.length; i++) {
-    if (Blog.autores[i] === autores) {
-      return true;
-    }
-  }
-  return false;
-}
-
-console.log(verificar("kaska"));
-
-function crearPosts(titulo, body, autor){
-  if(verificar(autor)){ 
-    //console.log(autor, "puede crear posts" + agregarObjetosAposts)
-   agregarObjetosAposts(titulo, autor, body)
-  }
-  console.log(autor, "no puede crear Posts")
-
-}
-crearPosts(null, null, "max")
-crearPosts("my first title", "jahjshhss", "Frigerio")
-
-
-
-//devolver un objeto. creamos un objeto .... (¿por que no desbloquea los parametros de la funcion agragarObjetosAposts)
-function agregarObjetosAposts(titleDePosts, autorDePosts, body){
-  Blog.posts.push({titleDePosts, autorDePosts, body });
-}
-//agregarObjetosAposts({titulo: "my first title", autorDePosts: "Frigerio", body: " "});
-console.log(Blog);
-
-
-
-// let compraRealizada = false;
-
-// function niño(adicional){
-//   if(compraRealizada === true){
-//     return adicional= 10;
-//   }else{
-//     return adicional = 5
-//   }
-  
+// function agragarTitulo(titulo) {
+//   Blog.titulo = titulo;
 // }
-// console.log("darle al niño si compro"(false))
+// agragarTitulo("Mi Blog");
+// console.log(Blog);
+
+// function agregarAutores(autor) {
+//   Blog.autores.push(autor);
+// }
+// agregarAutores("Frigerio");
+// agregarAutores("kaska");
+// console.log(Blog);
+
+// function verificar(autores) {
+//   for (let i = 0; i < Blog.autores.length; i++) {
+//     if (Blog.autores[i] === autores) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(verificar("kaska"));
+
+// function crearPosts(titulo, body, autor){
+//   if(verificar(autor)){ 
+//     //console.log(autor, "puede crear posts" + agregarObjetosAposts)
+//    agregarObjetosAposts(titulo, autor, body)
+//   }
+//   console.log(autor, "no puede crear Posts")
+
+// }
+// crearPosts(null, null, "max")
+// crearPosts("my first title", "jahjshhss", "Frigerio")
 
 
 
-function num(number){
-  return number * number;
-} 
-console.log(num(5*5))
+// //devolver un objeto. creamos un objeto .... (¿por que no desbloquea los parametros de la funcion agragarObjetosAposts)
+// function agregarObjetosAposts(titleDePosts, autorDePosts, body){
+//   Blog.posts.push({titleDePosts, autorDePosts, body });
+// }
+// //agregarObjetosAposts({titulo: "my first title", autorDePosts: "Frigerio", body: " "});
+// console.log(Blog);
+
+
+
+// // let compraRealizada = false;
+
+// // function niño(adicional){
+// //   if(compraRealizada === true){
+// //     return adicional= 10;
+// //   }else{
+// //     return adicional = 5
+// //   }
+  
+// // }
+// // console.log("darle al niño si compro"(false))
+
+
+
+// function num(number){
+//   return number * number;
+// } 
+// console.log(num(5*5))
+
+
+
+var car= ["Ford", "Seat", "Mercedes", "BMW", "Audi"];
+
+console.log(car[2]);
+
+car[3]= "Fiat";
+console.log(car);
+
+car[4]= ["1", "2", "3"];
+ console.log(car);
+
+
+ var dias=["Lunes", "Martes", "Miercoles", "jueves", "Viernes"];
+
+ /*var eliminado= dias.shift();
+ console.log(dias); 
+
+ var eliminadofinal= dias.pop();
+ console.log(dias);
+
+
+ var agregar = dias.push("sabado");
+ console.log(dias); */
+
+ /*var eliminarAlgo= dias.splice(2, 1);
+
+ console.log(dias);
+
+var añadir = dias.splice(2, 0, "Miercoles");
+
+console.log(dias); */
+
+
+var añadirAlgoMas= dias.splice(3, 0, "tomar agua");
+console.log(dias);
+
+
+
+var cambiar= dias.splice(4, 1, "inicio de finde semana");
+console.log(dias);
