@@ -16,6 +16,14 @@ while(i < A.length){
     }
 console.log("LA SUMA TOTAL ES " + N);
                               //3860
+ 
+ var A = [1,2,34,54,6,242,23,4,5,6,4,2,1,4,5,6,7,3423,23,4,4]; 
+ 
+ var sumar = (indice, valor)
+ => indice + valor;
+
+ console.log(A.reduce(sumar));
+                /*3860*/
 
 
 /*var A = [1,2,34,54,6,242,23,4,5,6,4,2,1,4,5,6,7,3423,23,4,4]; 
@@ -43,12 +51,46 @@ while(i <= A.length){
      sumador= A[i] * A[i]
 
         numMultiplicados.push(sumador);
-        
+     }
+      i++}
+    console.log(numMultiplicados);
+
+var A = [1,2,34,54,6,242,23,4,5,6,4,2,1,4,5,6,7,3423,23,4,4];
+var A= A.filter((num) =>num % 2 == 0).map((num)=> num * num). map((num)=> num - 1).filter((num)=> num % 5== 0);
+    
+console.log(A);
+
+//var paresA= [2, 34, 54, 6, 242, 4, 6, 4, 2, 4, 6, 4, 4];
+//multiplicarPares= paresA.map
+//(function(num){
+ // return num * num
+//})
+
+//console.log(multiplicarPares);
+
+
+function multiplicarPares(num){
+    paresA.map;
+    
+    return num * num       /*pedir nueva explicacion de la formula de la funcion*/
+}
+console.log()
+
+
+
+
+var A = [1,2,34,54,6,242,23,4,5,6,4,2,1,4,5,6,7,3423,23,4,4];
+
+function multiplicarPares(A){
+    var par= 0;
+    for(var i= 0; i <= A.length; i ++){ 
+    if( A[i]% 2 == 0){
+        par = A[i] * A[i]
     }
-
-    i++}
-console.log(numMultiplicados);
-
+}                                  //16, no entendi nada.
+return par
+}
+console.log(multiplicarPares(A));
 
 
 
@@ -68,6 +110,10 @@ while(i <= A.length){
 }
 
 console.log(raizCuadrada)
+
+
+
+
 
 // ejercicio 4, dado un arreglo de enteros, eliminar del arreglo original todos los valores impares
 //A = [1,2,34,54,6,242,23,4,5,6,4,2,1,4,5,6,7,3423,23,4,4]; 
@@ -103,3 +149,9 @@ while(i >= 0){
 console.log(invertir);
 
 //tuve que hacer un array nuevo para almacenar el array invertido. 
+
+
+var A = [1,2,34,54,6,242,23,4,5,6,4,2,1,4,5,6,7,3423,23,4,4];
+var invertir = A.reverse();
+console.log(invertir)
+
