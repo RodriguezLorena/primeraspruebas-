@@ -203,24 +203,24 @@
 
 //-------------------------------------------------------------------------------
 
-class PersonalZoo {
-  constructor(nombreDelPersonal, edad, id, sector) {
-    this.nombreDelPersonal = nombreDelPersonal;
-    this.edad = edad;
-    this.id = id;
-    this.sector = sector;
+class PersonalZoo{
+  constructor(nombreDelPersonal,edad,id,sector){
+    this.nombreDelPersonal= nombreDelPersonal;
+    this.edad= edad;
+    this.id=id;
+    this.sector=sector
   }
-  retornarNombreDelPers() {
-    return this.nombreDelPersonal;
+  retornarNombreDelPers(){
+    return this.nombreDelPersonal
   }
-  retornarEdad() {
-    return this.edad;
+  retornarEdad(){
+    return this.edad
   }
-  retornarId() {
-    return this.id;
+  retornarId(){
+    return this.id
   }
-  retornarsector() {
-    return this.sector;
+  retornarsector(){
+    return this.sector
   }
 }
 
@@ -272,8 +272,8 @@ let Egipsio = new Cat(
   "Egipsia",
   "blanco y marrón"
 );
-console.log(Angora.retornarNombre());
-console.log(Egipsio.retornarPiel());
+// console.log(Angora.retornarNombre());
+// console.log(Egipsio.retornarPiel());
 
 class Dog extends Animal {
   constructor(nombre, piel, sonido, genero, raza, color) {
@@ -299,9 +299,12 @@ let Adolf = new Dog(
   "Blanco"
 );
 
-console.log(Aragon.emitirSonido());
-console.log(Morena.verificarRaza());
-console.log(Adolf.identificarGenero());
+// console.log(Aragon.emitirSonido());
+// console.log(Morena.verificarRaza());
+// console.log(Adolf.identificarGenero());
+
+
+
 
 class AnimalesDelZoo extends Animal {
   constructor(
@@ -320,7 +323,7 @@ class AnimalesDelZoo extends Animal {
     this.edadDelAnimal = edadDelAnimal;
     this.personalaCargo = personalaCargo;
     this.añosEnLaInst = añosEnLaInst;
-    this.origen = origen;
+    this.origen = origen
   }
   retornarPersonal() {
     return this.personalaCargo;
@@ -328,8 +331,8 @@ class AnimalesDelZoo extends Animal {
   sumarAños() {
     return this.edadDelAnimal + this.añosEnLaInst;
   }
-  verOrigen() {
-    return this.origen;
+  verOrigen(){
+    return this.origen
   }
 }
 
@@ -344,74 +347,128 @@ let yaguareteAdulto = new AnimalesDelZoo(
   "Lima Gustavo",
   1
 );
-console.log(yaguareteAdulto.sumarAños());
-console.log(yaguareteAdulto.verificarRaza());
-console.log(yaguareteAdulto.retornarNombre());
+// console.log(yaguareteAdulto.sumarAños());
+// console.log(yaguareteAdulto.verificarRaza());
+// console.log(yaguareteAdulto.retornarNombre());
 
-let Guacamayo = new AnimalesDelZoo(
-  "zavana",
-  "plumas",
-  "Garrir",
-  "Hembra",
-  "Anodorhynchus hyacinthinus",
-  "azul",
-  5,
-  "Santino Lucas",
+
+let Guacamayo= new AnimalesDelZoo(
+ "zavana",
+ "plumas", 
+ "Garrir", 
+ "Hembra", 
+ "Anodorhynchus hyacinthinus",
+ "azul",
+  5, 
+ "Santino Lucas",
   1,
-  "Isla de Trinidiad"
-);
+ "Isla de Trinidiad");
 
-console.log(Guacamayo.retornarNombre());
-console.log(Guacamayo.verOrigen());
-console.log(Guacamayo.emitirSonido());
-console.log(Guacamayo.retornarPersonal());
-console.log(Guacamayo.verificarRaza());
+// console.log(Guacamayo.retornarNombre());  
+// console.log(Guacamayo.verOrigen());
+// console.log(Guacamayo.emitirSonido());
+// console.log(Guacamayo.retornarPersonal());
+// console.log(Guacamayo.verificarRaza());  
 
-class AnimalesRescatados extends PersonalZoo {
-  constructor(
-    nombre,
-    Origen,
-    tratamiento,
-    condicionActual,
-    nombreDelPersonal,
-    edad,
-    id,
-    sector
-  ) {
-    super(nombreDelPersonal, edad, id, sector);
+
+
+class AnimalesRescatados extends PersonalZoo{
+  constructor(nombre, origen, tratamiento, condicionActual, nombreDelPersonal, edad, id, sector ){
+    super(nombreDelPersonal, edad, id, sector)
     this.nombre = nombre;
-    this.origen = Origen;
+    this.origen = origen;
     this.tratamiento = tratamiento;
-    this.condicionActual = condicionActual;
+    this.condicionActual= condicionActual;
+
   }
 
-  retornarNombre() {
-    return this.nombre;
+  retornarNombre(){
+    return this.nombre
   }
-  retornarOrigen() {
-    return this.origen;
+  retornarOrigen(){
+    return this.origen
   }
-  verCondicion() {
-    return this.condicionActual;
+  verCondicion(){
+    return this.condicionActual
   }
-  verTratamientos() {
-    return this.tratamiento;
+  verTratamientos(){
+    return this.tratamiento
   }
 }
-let piton = new AnimalesRescatados(
-  "Snake",
-  "Africa",
-  "hidratacion",
-  "Estable",
-  "Julio Asame",
-  27,
-  1763,
-  "serpentario"
-);
+ let piton= new AnimalesRescatados("Snake", "Africa", "hidratacion", "Estable", "Julio Asame", 27, 1763, "serpentario")
 
-console.log(piton.retornarNombre());
-console.log(piton.verCondicion());
-console.log(piton.verTratamientos());
-console.log(piton.retornarOrigen());
-console.log(piton.retornarNombreDelPers());
-console.log(piton.retornarsector());
+//  console.log(piton.retornarNombre());
+//  console.log(piton.verCondicion());
+//  console.log(piton.verTratamientos());
+//  console.log(piton.retornarOrigen());
+
+//  console.log(piton.retornarsector());
+
+
+
+class Mamifero extends AnimalesDelZoo{
+  constructor(
+    cantidadDePreñez,
+    instanciaMedica,
+    nombre,
+    piel,
+    sonido,
+    genero,
+    raza,
+    color,
+    edadDelAnimal,
+    personalaCargo,
+    añosEnLaInst,
+    origen){
+    super(nombre,
+      piel,
+      sonido,
+      genero,
+      raza,
+      color,
+      edadDelAnimal,
+      personalaCargo,
+      añosEnLaInst,
+      origen);
+      this.cantidadDePreñez= cantidadDePreñez;
+      this.instanciaMedica= instanciaMedica;
+  }
+verificarFuncionalidadDelAnimal(){
+  if(this.genero === "Hembra" && this.cantidadDePreñez <= 5){ 
+  return this.nombre + " apto para mas fertilidad"
+}else if(this.genero === "Hembra" && this.cantidadDePreñez >5){
+  return this.nombre + " no es apto"
+}else{
+  return this.nombre + " No cumple la condicon"
+}
+}
+darAltaMadica(){
+  if(this.instanciaMedica <= 10){
+    return this.nombre + " Continua en Evalucion"
+  }else{
+    return "Animal apto para devolucion"
+  }
+}
+
+}
+
+let caballoI= new Mamifero(2, 0, "Caballo 0", "pelos", "Relinche", "Hembra", "Real Ingles", "blanco", 3, "Pilar Pedro", 1, "España" )
+let caballoF = new Mamifero(6, 3, "Caballo 1", "pelos", "Relinche", "Hembra", "arabe", "Marron", 12, "Alejandro Arce", 4, "Dubai");
+let caballoM= new Mamifero(null, 12, "Caballo 2", "pelos", "Relinche", "Macho", "cuarto de milla", "negro", 9, "Lucas Aguirre", 4, "Brasil");
+
+// console.log(caballoF.verificarFuncionalidadDelAnimal());
+// console.log(caballoM.verificarFuncionalidadDelAnimal());
+// console.log(caballoI.verificarFuncionalidadDelAnimal());
+// console.log(caballoI.darAltaMadica());
+// console.log(caballoM.darAltaMadica());
+// console.log(caballoF.darAltaMadica());
+
+
+module.exports= {
+  Mamifero
+}
+
+
+module.exports= {
+  PersonalZoo
+}
