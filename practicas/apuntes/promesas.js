@@ -49,7 +49,7 @@ desarrollo
  
     
  
-[22:35, 15/8/2021] Maxi: class Animal extends Cosa {
+ class Animal extends Cosa {
     constructor(name, habitad, reproduccion){
       super(name);
       this.habitad = habitad;
@@ -74,8 +74,7 @@ desarrollo
     }
   
   }
-  [22:41, 15/8/2021] Maxi: https://developer.mozilla.org/es/docs/Learn/JavaScript/Asynchronous
-  [22:38, 16/8/2021] Maxi: // Ejemplo de funcion con callback
+
   
   function sumar(x,y){
     console.log(x+y);
