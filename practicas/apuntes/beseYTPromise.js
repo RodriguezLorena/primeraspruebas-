@@ -56,7 +56,7 @@ function Esperar(mensaje){
 
  //Bucles y Closures:
 
- for(var i = i; i <= 5; i++){
+ for(var i = 1; i <= 5; i++){
      
      function miFuncion(){
         var x= i;
